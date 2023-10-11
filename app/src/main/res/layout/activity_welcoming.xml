@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".WelcomingActivity">
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="Selamat Datang di Aplikasi FatCal"
+        android:textColor="@color/deepblue"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/welcomeContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="297dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="🍏 Makan dengan bijak\n🏋️ Latihan dengan tekun\n💪 Capai target berat badan"
+        android:textColor="#1E1C99"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeContent"
+        android:layout_centerHorizontal="true"
+        android:text="Mulai"
+        android:background="@drawable/bg_button"
+        android:textColor="#FFFFFF"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="40dp"
+        android:id="@+id/startButton"/>
+
+
+
+</RelativeLayout>
