@@ -29,6 +29,7 @@
                 android:textColor="@color/orange"
                 android:textSize="50sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Fat"/>
 
             <TextView
@@ -37,6 +38,7 @@
                 android:textColor="@color/whitesmoke"
                 android:textSize="50sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Cal"/>
 
         </LinearLayout>

@@ -4,97 +4,177 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetStartedActivity">
+    tools:context=".GetStartedActivity"
+    android:background="@color/deepblue">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/txt_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="FatCal"
-            android:textSize="24sp"
-            android:fontFamily="@font/poppins_bold"
-            android:textStyle="bold"
-            android:layout_marginTop="100dp"
-            android:layout_marginBottom="55dp"/>
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="41dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Fat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/whitesmoke"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Cal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:layout_marginHorizontal="32dp"
             android:orientation="vertical">
 
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Nama:"
+            android:textColor="@color/whitesmoke"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
             <EditText
                 android:id="@+id/edt_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingVertical="12dp"
+                android:layout_height="40dp"
+                android:paddingVertical="8dp"
                 android:paddingHorizontal="32dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/bg_editext"
-                android:fontFamily="@font/poppins_regular"
-                android:hint="Nama"
                 />
 
-            <EditText
-                android:id="@+id/edt_current_weight"
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Berat Badan:"
+            android:textColor="@color/whitesmoke"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="12dp"
-                android:paddingHorizontal="32dp"
-                android:layout_marginBottom="24dp"
-                android:background="@drawable/bg_editext"
-                android:fontFamily="@font/poppins_regular"
-                android:hint="Berat Badan Saat Ini"
-                />
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
 
-            <EditText
-                android:id="@+id/edt_target_weight"
+                <EditText
+                    android:id="@+id/edtCurrentWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="32dp"
+                    android:background="@drawable/bg_editext"
+                     />
+
+                <Spinner
+                    android:id="@+id/spinnerSatuanBerat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_editext" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="12dp"
-                android:paddingHorizontal="32dp"
-                android:layout_marginBottom="24dp"
-                android:background="@drawable/bg_editext"
-                android:fontFamily="@font/poppins_regular"
-                android:hint="Berat Badan yang Diinginkan"
-                />
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
 
+                <EditText
+                    android:id="@+id/edtTargetWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="32dp"
+                    android:background="@drawable/bg_editext"
+                     />
+
+                <Spinner
+                    android:id="@+id/spinnerSatuanBerat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_editext" />
+
+            </LinearLayout>
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Tujuan:"
+            android:textColor="@color/whitesmoke"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
             <Spinner
                 android:id="@+id/spinner_diet_goal"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/bg_editext" />
-            <!-- Isi Spinner dengan opsi tujuan diet (cutting, bulking, maintaining) dalam kode Java/Kotlin -->
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Target Pencapaian:"
+            android:textColor="@color/whitesmoke"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
 
             <EditText
                 android:id="@+id/edt_target_date"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingVertical="12dp"
+                android:layout_height="40dp"
+                android:paddingVertical="8dp"
                 android:paddingHorizontal="32dp"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/bg_editext"
-                android:fontFamily="@font/poppins_regular"
-                android:hint="Tanggal Target Capaian"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
                 />
 
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Kalori Harian Maksimum:"
+            android:textColor="@color/whitesmoke"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
             <EditText
                 android:id="@+id/edt_max_calories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="12dp"
+                android:paddingVertical="8dp"
                 android:paddingHorizontal="32dp"
                 android:background="@drawable/bg_editext"
-                android:fontFamily="@font/poppins_regular"
-                android:hint="Jumlah Target Maksimum Kalori Harian"
                 />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -103,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="85dp"
                 android:background="@drawable/bg_button"
-                android:text="Get Started"
+                android:text="Mulai Sekarang!"
                 android:textColor="@color/white"
                 android:textAllCaps="false"
                 android:fontFamily="@font/poppins_bold"

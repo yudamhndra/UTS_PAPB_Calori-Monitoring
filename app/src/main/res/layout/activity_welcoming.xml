@@ -4,19 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
+    android:background="@color/deepblue"
     tools:context=".WelcomingActivity">
 
     <TextView
         android:id="@+id/welcomeMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
         android:layout_marginTop="200dp"
-        android:gravity="center"
-        android:text="Selamat Datang di Aplikasi FatCal"
-        android:textColor="@color/deepblue"
-        android:textSize="24sp" />
+        android:fontFamily="@font/poppins_bold"
+        android:text="Selamat Datang di Aplikasi"
+        android:textColor="@color/whitesmoke"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeMessage"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Fat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whitesmoke"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Cal" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/welcomeContent"
@@ -28,17 +53,17 @@
         android:fontFamily="@font/poppins_regular"
         android:gravity="center"
         android:text="🍏 Makan dengan bijak\n🏋️ Latihan dengan tekun\n💪 Capai target berat badan"
-        android:textColor="#1E1C99"
+        android:textColor="@color/whitesmoke"
         android:textSize="16sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/welcomeContent"
         android:layout_centerHorizontal="true"
         android:text="Mulai"
         android:background="@drawable/bg_button"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/whitesmoke"
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
         android:paddingTop="12dp"
@@ -47,6 +72,7 @@
         android:fontFamily="@font/poppins_bold"
         android:layout_marginTop="40dp"
         android:id="@+id/startButton"/>
+
 
 
 

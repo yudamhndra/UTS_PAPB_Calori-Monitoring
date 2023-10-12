@@ -15,7 +15,6 @@ class WelcomingActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.startButton.setOnClickListener {
-            // Ganti TujuanActivity::class.java dengan aktivitas yang sesuai
             val intent = Intent(this, GetStartedActivity::class.java)
             startActivity(intent)
             finish()
