@@ -23,7 +23,6 @@ class HomeActivity : AppCompatActivity() {
             val maxCalories = extras.getString(GetStartedActivity.EXTRA_CALORIES)
             val goals = extras.getStringArray(GetStartedActivity.EXTRA_GOALS)
 
-            // Set text views in your layout with the retrieved data
             binding.txtCurrentWeight.text = "Current Weight: $currentWeight $currentWeightSatuan"
             binding.txtTargetWeight.text = "Target Weight: $targetWeight $targetWeightSatuan"
             binding.txtMaxCalories.text = "Max Calories: $maxCalories"

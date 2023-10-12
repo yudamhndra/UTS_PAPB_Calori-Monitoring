@@ -47,11 +47,9 @@ class GetStartedActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListen
         binding.spinnerDietGoal.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
                 val selectedDiet = parent.getItemAtPosition(position).toString()
-                // Lakukan sesuatu dengan opsi yang dipilih (misalnya, simpan ke variabel atau tampilkan pesan)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Handle jika tidak ada yang dipilih
             }
         }
 
